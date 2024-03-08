@@ -53,6 +53,8 @@ phenomenon resulting from monostable excitable dynamics'
 (Riechers, Gottwald, Boers, 2023). 
 '''
 
+# set the random seed for reproducability
+np.random.seed(seed=2)
 
 #################################################################
 # Paramters                                                     #
