@@ -22,6 +22,15 @@ without setting the seed of the generator. Hence, an exact
 reproduction of the results based on random numbers is not
 possible.
 
+Under the points **compute transient trajectories** the user must
+specify how many trajectories will be generated. For the
+manuscript we generated 1000 trajectories. Please consider, that
+this took approximately one day on a cluster computer.
+
+Similarly, under **create fig05** the user may specify how many
+trajectories shall be generated. Additional trajectories serve
+for comparison and make the conclusions more robust.
+
 Running **master.py** automatically creates a repository
 **output**, where the results (including figures) will be stored.
 
