@@ -117,7 +117,7 @@ def detect_transitions_sim(sim, params):
 
 def transitions_proxy_record():
 
-    stratigraphic = pd.read_excel('../data/Rasmussen_et_al_2014'
+    stratigraphic = pd.read_excel('proxy_data/Rasmussen_et_al_2014'
                                   + '_QSR_Table_2.xlsx',
                                   header=None,
                                   skiprows=range(23),

@@ -46,7 +46,7 @@ def plot_trans_traj(params, ntraj=1, recompute=False):
     # import proxy data                                         #
     #############################################################
 
-    d18o_file = '../data/GICC05modelext_GRIP_and_GISP2_and_resampled_data_series_Seierstad_et_al._2014_version_10Dec2014-2.xlsx'
+    d18o_file = 'proxy_data/GICC05modelext_GRIP_and_GISP2_and_resampled_data_series_Seierstad_et_al._2014_version_10Dec2014-2.xlsx'
 
     data = pd.read_excel(d18o_file,
                          sheet_name='3) d18O and Ca 20 yrs mean',
@@ -354,7 +354,7 @@ def plot_trans_traj(params, ntraj=1, recompute=False):
     #legend.texts[4].set_y(-10)
     xdata = legend.legendHandles[2].get_xdata()
     legend.legendHandles[2].set_xdata(xdata + 70)
-    legend.texts[2].set_x(70)
+    legend.texts[2].set_x(330)
 
     # ax_GS_dur
     make_patch_spines_invisible(ax_GS_dur)

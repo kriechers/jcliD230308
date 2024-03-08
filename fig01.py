@@ -39,7 +39,7 @@ def create_fig01(params, ntraj=0):
     # Import NGRIP data                                             #
     #################################################################
 
-    d18o_file = '../data/GICC05modelext_GRIP_and_GISP2_and_resampled_data_series_Seierstad_et_al._2014_version_10Dec2014-2.xlsx'
+    d18o_file = 'proxy_data/GICC05modelext_GRIP_and_GISP2_and_resampled_data_series_Seierstad_et_al._2014_version_10Dec2014-2.xlsx'
 
     data = pd.read_excel(d18o_file,
                          sheet_name='3) d18O and Ca 20 yrs mean',
@@ -60,7 +60,7 @@ def create_fig01(params, ntraj=0):
     # import Henry et al. Pa/Th                                     #
     #################################################################
 
-    PaTh_file = '../data/henry2016.xls'
+    PaTh_file = 'proxy_data/henry2016.xls'
 
     PaTh_data = pd.read_excel(PaTh_file,
                               sheet_name='PaTh',
@@ -77,7 +77,7 @@ def create_fig01(params, ntraj=0):
     # import Sadatzki et al. PIP                                    #
     #################################################################
 
-    PIP_file = '../data/Sadatzki2020/pnas.2005849117.sd02.xlsx'
+    PIP_file = 'proxy_data/Sadatzki2020/pnas.2005849117.sd02.xlsx'
 
     PIP_data = pd.read_excel(PIP_file,
                              sheet_name='TOC, biomarkers - MD95-2010',
@@ -95,7 +95,7 @@ def create_fig01(params, ntraj=0):
     # import Sadatzki benthic d18o (deep water temperature)         #
     #################################################################
 
-    benthic_file = '../data/Sadatzki2020/pnas.2005849117.sd06.xlsx'
+    benthic_file = 'proxy_data/Sadatzki2020/pnas.2005849117.sd06.xlsx'
 
     benthic_data = pd.read_excel(benthic_file,
                                  sheet_name='ARM, SST, be d18O - MD99-2284',
