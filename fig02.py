@@ -364,6 +364,6 @@ fig.subplots_adjust(left = 0.05,
                     bottom = 0.,
                     right = 0.82)
 
-fig.savefig('figures/model_schematic.png', dpi = 300)
-fig.savefig('figures/model_schematic.pdf')
+fig.savefig('fig02.png', dpi = 300)
+fig.savefig('fig02.pdf')
 #plt.close()
