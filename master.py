@@ -128,7 +128,7 @@ plot_det_trajs(params, perturbations, thetas, recompute = True)
 # create fig05                                                  #
 #################################################################
 
-for n in range(1):
+for n in range(10):
     plot_ran_traj(params, (params['theta0'], 1.6), ntraj=n, recompute=True)
 
 #################################################################
@@ -136,7 +136,7 @@ for n in range(1):
 #################################################################
 
 print('computing transient trajectories')
-for n in range(1):
+for n in range(100):
     compute_trans_traj(params, ntraj=n, recompute=False)
 
 #################################################################
