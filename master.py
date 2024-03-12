@@ -107,37 +107,37 @@ if not isdir(resdir):
 # create fig A1                                                 #
 #################################################################
 
-compute_bifurcation_diagram(params, recompute=True)
-plot_atm_ocean_bifurcation(params)
+# compute_bifurcation_diagram(params, recompute=True)
+# plot_atm_ocean_bifurcation(params)
 
 #################################################################
 # create fig A2                                                 #
 #################################################################
 
-plot_atm_ice_bifurcation(params, (params['theta0'], 1.6), recompute = False)
+#plot_atm_ice_bifurcation(params, (params['theta0'], 1.6), recompute = False)
 
 #################################################################
 # create fig04                                                  #
 #################################################################
 
-perturbations = np.array([0.2, 0, -0.2, -0.5, -1, -2])
-thetas = (params['theta0'], 1.6)
-plot_det_trajs(params, perturbations, thetas, recompute = True)
+# perturbations = np.array([0.2, 0, -0.2, -0.5, -1, -2])
+# thetas = (params['theta0'], 1.6)
+# plot_det_trajs(params, perturbations, thetas, recompute = True)
 
 #################################################################
 # create fig05                                                  #
 #################################################################
 
-for n in range(10):
-    plot_ran_traj(params, (params['theta0'], 1.6), ntraj=n, recompute=True)
+# for n in range(10):
+#     plot_ran_traj(params, (params['theta0'], 1.6), ntraj=n, recompute=True)
 
 #################################################################
 # compute transient trajectories                                #
 #################################################################
 
-print('computing transient trajectories')
-for n in range(100):
-    compute_trans_traj(params, ntraj=n, recompute=False)
+# print('computing transient trajectories')
+# for n in range(100):
+#     compute_trans_traj(params, ntraj=n, recompute=False)
 
 #################################################################
 # create fig06 for selected transient trajectories              #

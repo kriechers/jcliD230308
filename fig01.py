@@ -77,7 +77,7 @@ def create_fig01(params, ntraj=0):
     # import Sadatzki et al. PIP                                    #
     #################################################################
 
-    PIP_file = 'proxy_data/Sadatzki2020/pnas.2005849117.sd02.xlsx'
+    PIP_file = 'proxy_data/pnas.2005849117.sd02.xlsx'
 
     PIP_data = pd.read_excel(PIP_file,
                              sheet_name='TOC, biomarkers - MD95-2010',
@@ -95,7 +95,7 @@ def create_fig01(params, ntraj=0):
     # import Sadatzki benthic d18o (deep water temperature)         #
     #################################################################
 
-    benthic_file = 'proxy_data/Sadatzki2020/pnas.2005849117.sd06.xlsx'
+    benthic_file = 'proxy_data/pnas.2005849117.sd06.xlsx'
 
     benthic_data = pd.read_excel(benthic_file,
                                  sheet_name='ARM, SST, be d18O - MD99-2284',
@@ -174,7 +174,7 @@ def create_fig01(params, ntraj=0):
     ax_d18o.set_yticks([-47.5, -42.5, -37.5, -32.5], minor = True)
     ax_d18o.set_xticklabels((ax_d18o.get_xticks()/1000).astype(np.int32))
     ax_d18o.set_xlim(xlims)
-    ax_d18o.set_ylabel(r'$\delta^{18}$O$_{\mathrm{NGRIP}}$ [$permil$]', color=colors['d18o'])
+    ax_d18o.set_ylabel(r'$\delta^{18}$O$_{\mathrm{NGRIP}}$ [$\permil$]', color=colors['d18o'])
     ax_d18o.set_xlabel('age [kyr b2k]', labelpad = 12)
 
     ax_d18o.annotate('(a)', (0.96, 0.8), xycoords='axes fraction')
@@ -344,7 +344,7 @@ def create_fig01(params, ntraj=0):
     ax_benthic.spines['left'].set_visible(True)
     # ax_benthic.spines['bottom'].set_visible(True)
     ax_benthic.xaxis.set_visible(False)
-    ax_benthic.set_ylabel(['MD99-2284 \n' + 'C. neoteretis \n' + r'$\delta^{18}$O [$\permil$ VPDB]'],
+    ax_benthic.set_ylabel('MD99-2284' + '\n C. neoteretis' + '\n' +  r'$\delta^{18}$O [$\permil$ VPDB]',
                           color=colors['benthic'],
                           verticalalignment='center')
     ax_benthic.yaxis.set_label_coords(1.1, 0.5)
