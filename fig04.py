@@ -454,8 +454,8 @@ def plot_det_trajs(params, perturbations, thetas, recompute = False):
         mkdir(directory)
         print('created' + directory)
 
-    fig.savefig(directory + '/fig06.png',
+    fig.savefig(directory + '/fig04.png',
                 dpi=300)
-    fig.savefig(directory + '/fig06.pdf', format='pdf')
+    fig.savefig(directory + '/fig04.pdf', format='pdf')
 
     plt.close()
