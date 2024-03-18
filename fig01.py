@@ -488,7 +488,7 @@ def create_fig01(params, ntraj=0):
     xy0 = (zoom_lim[0], ax_sim0.get_ylim()[0])
     xy1 = (zoom_lim[0], ax_d18o_zoom.get_ylim()[1])
     con1 = ConnectionPatch(xy0, xy1, 'data', 'data',
-                           ax_sim0, ax_d18o_zoom,
+                           axesA = ax_sim0, axesB = ax_d18o_zoom,
                            ls='solid',
                            zorder=1,
                            color='slategray',
@@ -498,7 +498,7 @@ def create_fig01(params, ntraj=0):
     xy0 = (zoom_lim[1], ax_sim0.get_ylim()[0])
     xy1 = (zoom_lim[1], ax_d18o_zoom.get_ylim()[1])
     con1 = ConnectionPatch(xy0, xy1, 'data', 'data',
-                           ax_sim0, ax_d18o_zoom,
+                           axesA = ax_sim0, axesB = ax_d18o_zoom,
                            ls='solid',
                            zorder=1,
                            color='slategray',
@@ -512,7 +512,7 @@ def create_fig01(params, ntraj=0):
 
     fig.savefig(directory + '/fig01_n%i.pdf' % (ntraj), format='pdf')
     fig.savefig(directory + '/fig01_n%i.png' % (ntraj), dpi=300)
-    # plt.close()
+    plt.close()
 
     #################################################################
 

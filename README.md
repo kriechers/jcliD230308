@@ -4,8 +4,9 @@ This github repository contains all the code used to generate the
 results presented in ** Glacial abrupt climate change as a
 multi-scale phenomenon resulting from monostable excitable
 dynamics ** by Keno Riechers, Georg Gottwald and Niklas Boers
-accepted for publication in Journal of Climate under the Number
-jcliD230308.
+(Journal of Climate, 2024)
+
+<https://doi.org/10.1175/JCLI-D-23-0308.1>
 
 The code was written using **python 3.8.10**. The file
 **requirements.txt** contains a list of packages which were
@@ -41,5 +42,8 @@ files as well as in the main text of our manuscript.
 
 
 Two create figures 2 and 3 please run **fig02.py** and
-**fig03.py**. 
+**fig03.py**. These figures will be stored in the main directory
+directly.
+
+
 

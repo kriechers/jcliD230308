@@ -143,13 +143,13 @@ if not isdir(resdir):
 # create fig06 for selected transient trajectories              #
 #################################################################
 
-plot_trans_traj(params, ntraj=0, recompute=False)
+# plot_trans_traj(params, ntraj=0, recompute=False)
 
 #################################################################
 # create fig01                                                  #
 #################################################################
 
-create_fig01(params, ntraj=0)
+create_fig01(params, ntraj=1)
 
 
 
